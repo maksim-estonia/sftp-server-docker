@@ -11,10 +11,12 @@ RUN apt-get update && \
 #    mkdir -p /var/run/sshd && \
 #    rm -f /etc/ssh/ssh_host_*key*
 
-COPY . .
+COPY ./sftp_setup.sh .
 #COPY files/sshd_config /etc/ssh/sshd_config
 #COPY files/create-sftp-user /usr/local/bin/
 #COPY files/entrypoint /
+
+RUN chmod +x sftp_setup.sh
 
 EXPOSE 22
 

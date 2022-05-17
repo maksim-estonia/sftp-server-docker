@@ -2,9 +2,25 @@
 
 ## To test/run
 
+```
+git clone https://github.com/maksim-estonia/sftp-server-docker
+```
+
 Terminal 1 (sftp-server docker instance)
 
+```
+docker build -t sftp-server .
+docker run -i -t sftp-server
+./sftp_setup.sh
+```
+
 Terminal 2 (host computer)
+
+```
+sftp sftp_usr@172.17.0.3
+```
+
+(password is `sftp`)
 
 ## Setup
 
