@@ -14,6 +14,8 @@ docker run -i -t sftp-server
 ./sftp_setup.sh
 ```
 
+![sftp-server](images/sftp-server.png)
+
 Terminal 2 (host computer)
 
 ```
@@ -21,6 +23,8 @@ sftp sftp_usr@172.17.0.3
 ```
 
 (password is `sftp`)
+
+![host](images/host.png)
 
 ## Setup
 
